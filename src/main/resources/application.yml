@@ -1,5 +1,5 @@
 app:
-  name: springboot-jwt-demo
+  name: P093 RBAC Demo
 
 jwt:
   header: Authorization

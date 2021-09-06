@@ -46,6 +46,7 @@ public class UserController {
     @RequestMapping("/whoami")
     @PreAuthorize("hasRole('USER')")
     public User user(Principal user) {
+        System.out.println("Inside /api/whoami  service \n");
         return this.userService.findByUsername(user.getName());
     }
 }
